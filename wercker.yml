@@ -11,4 +11,4 @@ build:
           cat /etc/redhat-release
           ruby -v
           ansible --version
-          gem list |grep spec
+          gem list

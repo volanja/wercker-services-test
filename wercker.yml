@@ -1,0 +1,14 @@
+box: volanja/docker_ansible-redmine
+no-response-timeout: 20
+
+services:
+    - id: volanja/docker-ansible
+build:
+  steps:
+    - script:
+        name: show information
+        code: |
+          cat /etc/redhat-release
+          ruby -v
+          ansible --version
+          gem list |grep spec

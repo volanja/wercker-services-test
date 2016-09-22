@@ -12,3 +12,5 @@ build:
           ruby -v
           ansible --version
           gem list
+          echo "===== env ======"
+          env
